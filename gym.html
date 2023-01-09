@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <style>
+        body{
+            font-family: cursive;
+            color: beige;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(Img/backy.jpg.jpg);
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid silver; */
+            position: absolute;
+            left: 50px;
+            top: 30px;
+        }
+        .left img{
+            width: 75px;
+            filter: invert(100%);
+            /* position: absolute;
+            left: 10px; */
+        }
+        .left div{
+            font-size: 18px;
+            /* display: block;
+            margin: auto;
+            width: 80%; */
+            position: absolute;
+
+        }
+        .center{
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        
+        }
+        .right{
+            display: inline-block;
+             /* border: 2px solid yellow; */
+             position: absolute;
+             right: 45px;
+             top: 40px;
+        }
+        .right .btn{
+            color: white;
+            background-color: rgb(82, 79, 79);
+            padding: 10px 12px;
+            border-radius: 12px;
+            font-family: cursive;
+            font-size: 15px;
+
+        }
+        .right .btn:hover{
+            background-color: rgb(235, 234, 197);
+            color: black;
+        }
+        .right .btn #search{
+            cursor: pointer;
+        }
+        .navbar{
+             /* display: inline-block;
+             height: 10px; 
+             width: 33%; */
+            /* position: absolute; */
+            /* right: 34px; */
+            /* top: 16px;  */
+            
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 30px 30px;
+            margin-left: -30px;
+            color: gray;
+
+        }
+        .navbar li a:hover{
+            color: chocolate;
+        }
+        .navbar li a :hover, .navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+        }
+        .container{
+            border: 2px solid rgb(216, 219, 209);
+            margin: 80px 80px;
+            padding: 75px;
+            width: 28%;
+            border-radius: 28px;
+            margin-left: 770px;
+            margin-top: 40px;
+        }
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 340px;
+            padding: 6px;
+            margin: 8px auto;
+            border: 3px solid rgb(80, 80, 79);
+            border-radius: 8px;
+            font-size: 20px;
+            background-color: rgb(231, 234, 238);
+            color: black;
+        }
+     
+        .container h1{
+            text-align: center;
+            font-size: 25px;
+        }
+        .container button{
+            display: block;
+            width: 34%;
+            margin: auto;
+            border-radius: 5px;
+            font-size:20px ;
+            font-family: cursive;
+
+        }
+        .container button:hover{
+            background-color: rgb(230, 214, 146);
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+    <!-- left for logo -->
+    <div class="left">
+        <img src= "Img/logo.jpg.png" alt="">
+        <div>PRITAM'S FITNESS</div>
+
+
+    </div>
+
+    <!-- center for nav bar -->
+    <div class="center">
+    <ul class="navbar">
+        <li><a href="#" class="active">home </a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">fitness calculator</a></li>
+        <li><a href="#">contact us</a></li>
+    </ul>
+
+    </div>
+
+    <!-- right for query -->
+    <div class="right">
+      
+      <button id="search" class="btn">contact us</button>
+      <button id="search" class="btn">Email us</button>
+
+    </div>
+</header>
+<div class="container">
+    <h1>Join The Best Gym Of Muzaffarpur</h1>
+<form action="noaction.php">
+    <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Name">
+        <input type="text" name="" placeholder="Enter your Age">
+        <input type="text" name="" placeholder="Enter your Gender">
+        <input type="text" name="" placeholder="Enter your Locality">
+        <button class="btn">submit</button>
+    </div>
+</form>
+</div>
+    
+</body>
+</html>
